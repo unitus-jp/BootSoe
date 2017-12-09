@@ -197,7 +197,7 @@
       $(function(){
         var now_color = "red";
         var $b = $(".base");
-        $(".base").on("click", ".item", function(){
+        $b.on("click", ".item", function(){
           if($(this).hasClass(now_color)){
             $(this).removeClass(now_color);
           } else {

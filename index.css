@@ -1,0 +1,130 @@
+body {
+  background-image: url("./back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+#palette .nav-link {
+  color: white;
+}
+#palette .nav-link.red.active {
+  background-color: rgba(255,0,0,0.5);
+}
+#palette .nav-link.green.active {
+  background-color: rgba(0,255,0,0.5);
+}
+#palette .nav-link.blue.active {
+  background-color: rgba(0,0,255,0.5);
+}
+
+.box-1-hw {
+  width: 8vh;
+  height: 8vh;
+}
+.box-1-w {
+  width: 8vh;
+}
+.box-1-h {
+  height: 8vh;
+}
+
+.box-2-hw {
+  width: 16vh;
+  height: 16vh;
+}
+.box-2-w {
+  width: 16vh;
+}
+.box-2-h {
+  height: 16vh;
+}
+
+.box-3-hw {
+  width: 24vh;
+  height: 24vh;
+}
+.box-3-w {
+  width: 24vh;
+}
+.box-3-h {
+  height: 24vh;
+}
+
+.base {
+  border: solid 1px white;
+  display: inline-grid;
+  margin: 2vh;
+  grid-template-rows: 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
+  grid-template-columns: 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
+}
+.workspace {
+  width: 96vh;
+  height: 96vh;
+  position: absolute;
+  left: 2vh;
+  top: 2vh;
+}
+
+.workspace .target {
+  height: 8vh;
+  background-color: white;
+}
+
+.item {
+  border: dashed 1px white;
+  color: white;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.item.red {
+  background-color: rgba(255,0,0,0.6);
+}
+.item.green {
+  background-color: rgba(0,255,0,0.6);
+}
+.item.blue {
+  background-color: rgba(0,0,255,0.6);
+}
+.base.red .item:hover {
+  cursor: pointer;
+  background-color: rgba(255,0,0,0.2);
+}
+.base.green .item:hover {
+  cursor: pointer;
+  background-color: rgba(0,255,0,0.2);
+}
+.base.blue .item:hover {
+  cursor: pointer;
+  background-color: rgba(0,0,255,0.2);
+}
+
+.item.active {
+  background-color: rgba(0,255,0,0.6);
+}
+
+textarea {
+  margin-top: 24px;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 4px;
+  border: none;
+  color: #009688;
+  display: block;
+  padding: 8px;
+  outline: none;
+  width: 100%;
+}
+
+.run.btn {
+  background-color: #009688;
+  color: white;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.run.btn:hover {
+  opacity: 0.8;
+}
